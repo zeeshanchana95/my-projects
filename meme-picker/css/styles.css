@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+/*typography*/
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h1, h2{
+    color: #EED6D3;
+    margin: 0;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3{
+    margin: 25px;
+}
+
+/* layout */
+
+header{
+    background-color: #67595E;
+}
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 10px 0 0 0;
+}
+
+.pumpkin-img{
+    width: 80px;
+}
+
+.controls-container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px auto;
+}
+
+/* controls */
+
+.emotion-radios{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 4px 8px;
+}
+
+label{
+    font-size: 14px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.highlight{
+    background-color: #fff0ee;
+    color: #bd301d;
+    font-weight: bold;
+    accent-color: #bd301d;
+}
+
+.radio:last-child{
+    border-bottom: 0;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.gifs-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+}
+
+.gifs-check-label{
+    width: unset;
+    margin-right: 5px;
+}
+
+.get-image-btn{
+    background-color: #67595e;
+    color: #eed6d3;
+    padding: 15px 19px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+/* modal */
+.meme-modal {
+    display: none;
+    flex-direction: column;
+    border: 1px solid #67595e;
+    border-radius: 5px;
+    max-width: 550px;
+    max-height: 510px;
+    overflow: auto;
+    background-color: #fff0ee;
+    margin: auto;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #999495;
+    color: #FFF;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.meme-modal-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.cat-img {
+    max-width: 160px;
+    max-height: 180px;
+    border-radius: 5px;
+}
+
+.meme-modal-close-btn{
+    margin-left: auto;
+    font-size: 24px;
+}

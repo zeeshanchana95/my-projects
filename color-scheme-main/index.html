@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>color scheme</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header-container">
+      <input type="color" id="color-input">
+
+      <select class="selector" id="select">
+        <option value="Monochrome" selected="select">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+      </select>
+
+      <button class="btn" id="btn-get-clr">Get color scheme</button>
+    </header>
+
+    <section class="section">
+      <div class="container-color" id="container-color"></div>
+      <div class="container-p" id="container-p"></div>
+    </section>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

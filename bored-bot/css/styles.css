@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 1em;
+    font-family: 'Merriweather Sans', sans-serif;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625em;
+    padding: 1.5em 0;
+    background-color: #6f1d1b;
+    /* box-shadow: 0 1px 6px #1d1c1c; */
+    color: #f6fff8;
+}
+
+header span {
+    font-size: 3.5em;
+}
+
+main {
+    /* border: 1px solid #bb9457; */
+    background-color: #b1514f;
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+    padding: 3.5em 0;
+    height: 28em;
+}
+
+.activity-description {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1em 1.25em;
+    background-color: #ffe6a7;
+    color: #6f1d1b;
+    width: 90%;
+    min-height: 8em;
+}
+
+.get-activity-btn {
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #6f1d1b;
+    color: #ffe6a7;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 0.8em 0;
+    cursor: pointer;
+}
+
+.get-activity-btn:hover {
+    background-color: #ffe6a7;
+    color: #6f1d1b;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    color: #6f1d1b;
+}

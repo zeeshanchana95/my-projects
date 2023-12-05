@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+/* Reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #090909;
+}
+
+/* Utilities */
+
+.section-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+}
+
+.date {
+  font-size: 0.75rem;
+}
+
+/* -------------- */
+/* Components */
+/* -------------- */
+
+/* Header */
+
+header {
+  padding: 1.5rem 0;
+}
+
+header .section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: 'Roboto';
+}
+
+.logo-container > p {
+  font-size: 0.875rem;
+}
+
+/* Hero section */
+
+.hero {
+  background-image: url(images/hero-img.png);
+  background-size: cover;
+  background-position: center bottom -50px;
+  color: white;
+  padding: 5.5rem 1.125rem 1.5625rem 1.125rem;
+  max-width: 1085px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.31) 0%,
+    rgba(0, 0, 0, 0.31) 100%
+  );
+  z-index: 1;
+}
+
+.hero h1 {
+  max-width: 300px;
+  line-height: 1.1;
+  margin-block: 0.5rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Blog section */
+
+.blog-section {
+  margin-block: 2rem 2.5rem;
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 3px;
+  height: 232px;
+  object-fit: cover;
+}
+
+.blog-container {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.blog-container a {
+  margin: 0 auto;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.blog .date {
+  margin-block: 0.875rem 0.5rem;
+  text-transform: uppercase;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.blog p {
+  max-width: 450px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #202020;
+  color: white;
+  text-align: center;
+  padding-block: 3.5rem;
+  max-width: 1085px;
+  margin: 0 auto;
+}
+
+/* ------------- */
+/* Media */
+/* ------------- */
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 17.875rem 0 4rem 3rem;
+  }
+
+  .hero-content h1 {
+    max-width: 700px;
+    font-size: 2.5rem;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-content p {
+    max-width: 620px;
+  }
+
+  .blog-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-container a {
+    grid-column: 1 / -1;
+  }
+
+  .section-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 3.3rem;
+  }
+
+  .logo-container > p {
+    font-size: 1.125rem;
+  }
+}
+
+/* --------------- */
+/* About Page */
+/* --------------- */
+
+.recent-posts-container {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 3.3rem;
+  margin-bottom: 3.6rem;
+}
+
+.about .avatar {
+  min-width: 182px;
+  min-height: 182px;
+  max-width: 182px;
+  max-height: 182px;
+  margin-block: 2.6rem;
+}
+
+.about h1 {
+  font-size: 34px;
+  letter-spacing: -1px;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.about .text > div {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about .text > p {
+  margin-bottom: 1rem;
+}
+
+.about-me {
+  margin-bottom: 3.1rem;
+}
+
+@media (min-width: 1020px) {
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .about h1 {
+    max-width: 100%;
+    font-size: 2.4rem;
+  }
+
+  .recent-posts-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Article Page */
+.article img {
+  max-height: 488px;
+  width: 100%;
+  object-fit: cover;
+  margin-block: 2.25rem;
+}
+
+.article h1 {
+  font-size: 34px;
+  letter-spacing: -1px;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.article .text > div {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.article .text > p {
+  margin-bottom: 1rem;
+}
+
+.article {
+  margin-bottom: 3.1rem;
+}
+
+.recent-posts-container .heading {
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .article .heading {
+    padding-inline: 4.5rem;
+  }
+
+  .article .text {
+    padding-inline: 4.5rem;
+  }
+
+  .recent-posts-container .heading {
+    grid-column: 1 / -1;
+  }
+}

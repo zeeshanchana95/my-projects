@@ -1,0 +1,148 @@
+:root {
+  --ff: 'Exo 2', sans-serif;
+
+  --fw-regular: 100;
+  --fw-medium: 400;
+  --fw-semi-bold: 700;
+
+  --fs-small: 0.75rem;
+  --fs-medium: 1rem;
+
+  --clr-border: #D1D5DB;
+  --clr-font: #374151;
+  --clr-font-hex: #2B283A;
+  --clr-font-select: #111827;
+  --clr--selector: #9CA3AF;
+  --clr-white: #fff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  background-color: #2B283A;
+  border-radius: 5px;
+  min-height: 550px;
+  width: 550px;
+  margin: 1rem auto;
+  font-family: var(--ff);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-medium);
+}
+
+/* Typography */
+
+.selector,
+option {
+  color: var(--clr-font-select);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-medium);
+}
+
+.btn {
+  color: var(--clr-font);
+  font-weight: var(--fs-medium);
+  font-size: var(--fs-small);
+}
+
+.clr-name {
+  color: var(--clr-font-hex);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-medium);
+  text-transform: uppercase;
+}
+
+p {
+  color: white;
+}
+
+/* layout */
+
+.container {
+  border: 3px solid var(--clr-white);
+  border-radius: 3px;
+}
+
+/* header layout */
+
+.header-container {
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  gap: var(--fs-small);
+  align-items: center;
+  background-color: #1F2937;
+}
+
+.selector {
+  width: 312px;
+  padding: 10px;
+  border: 1px solid var(--clr-border);
+  border-radius: 3px;
+}
+
+option {
+  text-align: center;
+}
+
+/* section layout */
+
+.container-color {
+  display: flex;
+}
+
+.colors {
+  width: 100%;
+  height: 500px;
+  border: 1px solid var(--clr-white);
+  display: flex;
+}
+
+.container-p {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* input */
+
+input[type="color"] {
+  width: 61px;
+  height: 41px;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 25%;
+  border: 2px solid var(--clr-border);
+}
+
+/* button */
+
+.btn {
+  width: 123px;
+  padding: 13px;
+  border: 1px solid var(--clr-border);
+  border-radius: 3px;
+  background-color: var(--clr-white);
+}
+
+.clr-name {
+  padding: 1rem;
+}

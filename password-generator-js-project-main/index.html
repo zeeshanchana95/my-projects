@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+
+        <title>Password Generator</title>
+           
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>Generate a <br><span id="random-span">random password</span></h1>
+            <p id="password-advise">Never use an insecure password again</p>
+            <div id="pass-criteria-con">
+                <label for="password-len-el" id="label">Pasword Length: </label>
+                <input type="text" id="password-len-el" placeholder="15">
+                    
+                <p id="label" class="criteria">Criteria: </p>    
+                <div id="criteria">
+                        <input type="checkbox" id="add-alphabets" name="alphabets" value="Alphabets" checked> 
+                        <label for="add-alphabets"> Alphabets</label><br>
+                        
+                        <input type="checkbox" id="add-numbers" name="numbers" value="Numbers" checked>
+                        <label for="add-numbers"> Numbers</label><br>
+                        
+                        <input type="checkbox" id="add-symbols" name="symbols" value="Symbols" checked>
+                        <label for="add-symbols"> Symbols</label><br>
+                </div>
+            
+                <button id="generate-pass-btn" onclick="passwords()">Generate Password</button>
+                <p id="status"></p>
+            </div>
+            <hr>
+            <div class="paswords-container">
+                <div class="gen-pass" id="password-one-el" onclick="copyOneToClipboard()"></div>
+                <div class="gen-pass" id="password-two-el" onclick="copyTwoToClipboard()"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

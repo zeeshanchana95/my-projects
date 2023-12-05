@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* HEADER-SECTION, TITLE & ANCHOR */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+}
+
+.blured {
+    width: 100%;
+    height: 25vh;
+    position: absolute;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: 50% 23%;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+h1 {
+    color: white;
+    font-size: 2.8em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+/* SEARCH BAR */
+
+.search-bar {
+    width: 80%;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.search-bar > i {
+    position: absolute;
+    margin-left: 10px;
+    color: rgb(103, 103, 103);
+}
+
+input, #search-btn {
+    height: 100%;
+}
+
+input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    width: 100%;
+    padding-left: 30px;
+    cursor: pointer;
+    border: 1px solid rgb(116, 116, 116);
+}
+
+#search-btn {
+    width: 25%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+    border: 1px solid rgb(116, 116, 116);
+}
+
+
+/* SEARCH RENDER LIST */ 
+
+main {
+    margin-top: 50px;
+}
+
+#movie-render {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.image-placeholder {
+    width: 50%;
+    opacity: 0.5;
+}
+
+.card {
+    font-weight: 300;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.data-poster {
+    width: 20%;
+}
+
+
+.top-card-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mid-card-div {
+    display: flex;
+    gap: 30px;
+    margin-top: 3px;
+    align-items: center;
+}
+
+.data-btn {
+    font-weight: 300;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.data-btn > i {
+    margin-right: 2px;
+}
+
+.data-plot {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.read-more-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+hr {
+    width: 80%;
+}
+
+@media (min-width: 480px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 3.9em;
+    }
+
+    a {
+        font-size: 2em;
+    }
+
+    .card {
+        gap: 15px;
+    }
+
+    #search-btn {
+        width: 15%;
+    }
+    
+    .top-card-div {
+        display: flex;
+        gap: 10px;
+    }
+
+    .data-title {
+        font-size: 2.3em;
+    }
+
+    .data-rating {
+        font-size: 1.4em;
+    }
+    
+    .mid-card-div {
+        display: flex;
+        gap: 30px;
+        margin-top: 3px;
+        font-size: 1.4em;
+    }
+    
+    .data-btn {
+        font-size: 0.8em;
+        font-weight: 300;
+        border: none;
+        background: transparent;
+    }
+    
+    .data-btn > i {
+        margin-right: 2px;
+        cursor: pointer;
+    }
+    
+    .data-plot {
+        margin-top: 15px;
+        font-size: 1.1em;
+    }
+    
+    hr {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .data-plot {
+        font-size: 1.3em;
+    }
+
+    .image-placeholder {
+        width: 30%;
+    }
+}

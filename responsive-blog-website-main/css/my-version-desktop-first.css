@@ -1,0 +1,186 @@
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* =====================
+   TYPOGRAPHY
+   =====================
+*/
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color:#143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color:#1792d2;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* =====================
+   LAYOUT
+   =====================
+*/
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background:#f8f8f8;
+    padding: 2em 0;
+
+}
+
+@media (max-width:675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+
+/* =====================
+   navigation
+   =====================
+*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left:2em;
+}
+
+nav a {
+    text-decoration: none;
+    color:#707070;
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus{
+    color:#1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color:#707070; 
+}
+
+@media (max-width:675px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
+}
+
+
+
+.container-post {
+    display: flex;
+}
+
+main {
+    width: 80%;
+    border: 1px solid red;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.article-title {
+    margin-top: 0;
+}
+
+.article-featured {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    margin-bottom: 1em;
+}
+
+.article-recent-main {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    order: 2;
+    width: 60%;
+
+
+}
+
+.article-recent-secondary {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+aside {
+    width: 20%;
+    border: 1px solid black ;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+}
+
+.widget-img {
+    width: 100%;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-recent-post:last-child {
+    border-bottom: none;
+}
+
+.widget-recent-post-title{
+    margin-top: 0;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #707070;
+    order: 2;
+    margin-bottom: 2em;
+}    
+
+

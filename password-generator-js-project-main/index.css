@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+.main-container {
+    width: 440px;
+    height: 460px;
+    background: #1F2937;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+h1 {
+    color: var(--white, #FFF);
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 3px 0;
+}
+
+#random-span {
+    color: #4ADF86;
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+#password-advise {
+    margin-top: 0px;
+    color: var(--Medium-grey, #D5D4D8);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+
+}
+
+#generate-pass-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #10B981;
+    border:none;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+hr {
+    margin:15px 0;
+    background: #2F3E53;
+    opacity: 0.5
+    
+}
+
+.passwords-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.gen-pass {
+    width: 420px;
+    max-width: 420px;
+    height: 25px;
+    border-radius: 6px;
+    background: #273549;
+    color: #55F991;
+    font-size: 14px;
+    margin: 10px 2px;
+    text-align: center;
+    padding:4px 3px;
+    flex-wrap: wrap;
+} 
+
+#label {
+    margin-top: 0px;
+    color: var(--Medium-grey, #D5D4D8);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+p.criteria {
+    color:#4ADF86 !important;
+    font-weight: bold !important;
+}
+
+#password-len-el {
+    border-radius: 5px;
+    background: #273549;
+    border:none;
+    color:white;
+    text-align: center;
+}
+
+.pass-criteria-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+#criteria {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 10px;
+    margin-top: 0px;
+    color: var(--Medium-grey, #D5D4D8);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+#status {
+    margin-top: 0px;
+    color: var(--Medium-grey, #D5D4D8);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px; /* 140% */
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Post View</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/51f10c69eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="./images/logo.png" class="logo-img" alt="A smiling chat emoji">
+            <span class="logo-text">My learning journal</span>
+        </div>
+
+
+        <nav id="nav">
+            <ul id="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Me</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="mobile-menu-btn"></i>
+            <i class="fa-solid fa-xmark hidden" id="close-menu-btn"></i>
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="./index.html" class="mobile-menu-link">Home</a>
+                <a href="./about.html" class="mobile-menu-link">About Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="post-view-wrapper">
+        <article class="post-details">
+            <div class="wrapper">
+                <time datetime="2023-08-22">August 22, 2023</time>
+                <h1>My new journey as a bootcamp student.</h1>
+                <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over
+                    to
+                    the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+            </div>
+
+            <img src="./images/hero.png" alt="post image">
+
+            <div class="wrapper">
+                <h2>How I stay committed to learning</h2>
+
+                <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try
+                    to create simple projects using what I learned or work new techniques into existing projects.</p>
+
+                <p>While that was fun, I felt like it would be helpful to share what I was learning and most things
+                    about my journey with the world.</p>
+
+                <h2>How I got started</h2>
+
+                <p>I started simple and gradually grew my learning journal site. I would take notes about what I was
+                    learning. After each learning session, I'd use my notes to not only reflect on what I learned but
+                    also write short summaries of what I learned using my own words.</p>
+
+                <p>That helped me grok what I was learning, and I realized that posting my learning summaries was also
+                    helping others learn and stay motivated.</p>
+            </div>
+        </article>
+
+        <section>
+            <h2 class="recent-post-header">Recent Posts</h2>
+        </section>
+
+        <section class="articles">
+            
+            <article class="post">
+                <img src="./images/img-1.png" alt="React code snippet">
+                <time datetime="2023-08-22">August 22, 2023</time>
+                <h2>Blog one</h2>
+                <p class="article-description">I'm excited to start a new learning journey as a Scrimba Bootcamp
+                    student! After several
+                    months of learning in the Frontend Developer Career Path.</p>
+            </article>
+
+            <article class="post">
+                <img src="./images/img-2.png" alt="React code snippet">
+                <time datetime="2023-08-22">August 22, 2023</time>
+                <h2>Blog two</h2>
+                <p class="article-description">I'm excited to start a new learning journey as a Scrimba Bootcamp
+                    student! After several
+                    months of learning in the Frontend Developer Career Path.</p>
+            </article>
+
+            <article class="post">
+                <img src="./images/img-3.png" alt="React code snippet">
+                <time datetime="2023-08-22">August 22, 2023</time>
+                <h2>Blog three</h2>
+                <p class="article-description">I'm excited to start a new learning journey as a Scrimba Bootcamp
+                    student! After several
+                    months of learning in the Frontend Developer Career Path.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h4>My learning journal <span class="copyright">Copyright &COPY;2023</span></h4>
+    </footer>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
