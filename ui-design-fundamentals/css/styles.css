@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat';
+    display: grid;
+    align-items: center;
+    /* background: linear-gradient(322deg, rgba(43,46,39,1) 29%, rgba(28,28,28,1) 29%, rgba(28,28,28,1) 40%, rgba(43,46,39,1) 40%, rgba(43,46,39,1) 48%, rgba(28,28,28,1) 48%, rgba(28,28,28,1) 92%, rgba(113,174,33,1) 92%, rgba(113,174,33,1) 100%); */
+    background-image: url('../images/sky1.jpg');
+    /* background-image: url('../images/sky2.jpg'); */
+    /* background-image: url('../images/sky2_dark.jpg'); */
+    /* background-image: url('../images/moon_dark.jpg'); */
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.container {
+    padding: 4em;
+    width: 50%;
+    height: 50vh;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: .5em;
+}
+
+span {
+    position: relative;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    bottom: .1em;
+    background-color: #71AE21;
+    width: 90%;
+    height: .2em;
+    z-index: -1;
+}
+
+
+/*
+UI DESIGN FUNDAMENTALS
+
+- White Space
+- Color 
+- Contrast 
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
+
+*/

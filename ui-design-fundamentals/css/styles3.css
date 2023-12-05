@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-image: url('../images/sky3.jpg');
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.container {
+    padding: 4em;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 7em;
+    height: 50vh;
+}
+
+h1 {
+    font-size: 3.5rem;
+    width: 90%;
+    position: relative;
+}
+
+h1::before {
+    position: absolute;
+    content: '';
+    width: .07em;
+    height: 232px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: -1.3em;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: .5em;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+span {
+    position: relative;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    bottom: .1em;
+    background-color: #71AE21;
+    width: 90%;
+    height: .2em;
+    z-index: -1;
+}
+
+
+/*
+UI DESIGN FUNDAMENTALS
+
+- White Space
+- Color 
+- Contrast 
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
+
+*/

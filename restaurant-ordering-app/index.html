@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Restaurant Ordering App</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/51f10c69eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Crust 'N' Roll</h1>
+            <p class="tagline">Burgers, Pizzas, Delivered.</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="menu-list" id="menu-list">
+                <!-- <div class="menu-item">
+                    <div class="menu-image">🍕</div>
+                    <div class="menu-details">
+                        <h3>Pizza</h3>
+                        <p>Peperoni, mushroom, mozarella</p>
+                        <h4>$14</h4>
+                    </div>
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-plus add-icon"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">🍔</div>
+                    <div class="menu-details">
+                        <h3>Hamburger</h3>
+                        <p>Peperoni, mushroom, mozarella</p>
+                        <h4>$14</h4>
+                    </div>
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-plus add-icon"></i>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section>
+            <div class="orders" id="orders">
+                <h3>Your order</h3>
+
+                <div class="order-list" id="order-list">
+                    <!-- <div class="order-item">
+                        <h3>Pizza</h3>
+                        <span>remove</span>
+                        <h4>$14</h4>
+                    </div>
+
+                    <div class="order-item">
+                        <h3>Hamburger</h3>
+                        <span>remove</span>
+                        <h4>$14</h4>
+                    </div> -->
+                </div>
+
+                <div class="order-summary">
+                    <h3>Total Price</h3>
+                    <h4 id="total-amount">$14</h4>
+                </div>
+
+                <button id="checkout-btn">Complete order</button>
+            </div>
+
+            <div class="order-message" id="success-msg">
+                
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="modal">
+        <h2>Enter card details</h2>
+        <i class="fa-regular fa-circle-xmark close-modal" id="close-modal-btn"></i>
+
+        <form class="card-details-form" id="payment-form">
+            <input type="text" id="full-name" aria-label="Full Name" placeholder="Enter your name" required>
+            <input type="tel" id="card-number" pattern="[0-9]{16}" aria-label="16 Digits Card Number" placeholder="Enter 16 digits card number" required>
+            <input type="tel" id="card-cvv" pattern="[0-9]{3}" aria-label="3 Digits CVV" placeholder="Enter 3 digits CVV" required>
+            <button id="pay-btn">Pay</button>
+        </form>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
